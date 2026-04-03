@@ -10,5 +10,6 @@ The master and RF modules will be replaced with a **CPU** and **SRAM** .
 
 `tb_master_master_top.v` : Verifies master + packet + RF
 
-
 `tb_apb.v` : Full testbench including the I2C module
+
+![diagram](https://github.com/ddddddddggod/APB/apb_i2c.png)
