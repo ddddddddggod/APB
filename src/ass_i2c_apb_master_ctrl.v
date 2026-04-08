@@ -29,7 +29,7 @@ end
 always @(*) begin
     m_state_n = m_state;
     case (m_state)
-        m_idle: if (interrupt && rw_valid) m_state_n = m_setup; 
+        m_idle: if (rw_valid) m_state_n = m_setup; 
         m_setup: m_state_n = m_access;
         m_access: if (pready) m_state_n = m_idle;
     endcase
